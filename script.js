@@ -4,76 +4,76 @@ const WHATSAPP_NUMBER = "5583993706527";
 
 (function () {
   const waBase = "https://wa.me/" + WHATSAPP_NUMBER;
-  document.querySelectorAll("[data-whatsapp]").forEach((a) => (a.href = waBase));
+
+  // Links de WhatsApp. data-whatsapp="mensagem" abre a conversa com o texto pronto.
+  // Sem JavaScript, os links continuam levando à seção de contato (#contato).
+  document.querySelectorAll("[data-whatsapp]").forEach((a) => {
+    const msg = a.getAttribute("data-whatsapp");
+    a.href = msg ? waBase + "?text=" + encodeURIComponent(msg) : waBase;
+    a.target = "_blank";
+    a.rel = "noopener";
+  });
 
   document.getElementById("ano").textContent = new Date().getFullYear();
 
-  // Header ao rolar
+  // Borda do cabeçalho ao rolar
   const topbar = document.querySelector(".topbar");
-  const onScroll = () => topbar.classList.toggle("is-scrolled", window.scrollY > 20);
+  const onScroll = () => topbar.classList.toggle("is-scrolled", window.scrollY > 8);
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
   // Menu mobile
   const toggle = document.querySelector(".menu-toggle");
   const nav = document.getElementById("menu");
+  const mobile = window.matchMedia("(max-width: 960px)");
   const setMenu = (open) => {
     toggle.setAttribute("aria-expanded", String(open));
     toggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
     nav.classList.toggle("is-open", open);
-    topbar.classList.toggle("menu-open", open);
+    document.body.classList.toggle("menu-lock", open);
+    if (open) requestAnimationFrame(() => nav.querySelector("a").focus());
   };
   toggle.addEventListener("click", () => setMenu(toggle.getAttribute("aria-expanded") !== "true"));
-  nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
-
-  // Animação de entrada
-  const items = document.querySelectorAll(".reveal");
-  if ("IntersectionObserver" in window) {
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add("is-visible");
-            io.unobserve(e.target);
-          }
-        });
-      },
-      { threshold: 0.15 }
-    );
-    items.forEach((el, i) => {
-      el.style.transitionDelay = (i % 4) * 80 + "ms";
-      io.observe(el);
-    });
-  } else {
-    items.forEach((el) => el.classList.add("is-visible"));
-  }
-
-  // Ambientes: toque acende/apaga (celular)
-  document.querySelectorAll(".room").forEach((room) => {
-    room.addEventListener("click", () => room.classList.toggle("is-on"));
+  nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => mobile.matches && setMenu(false)));
+  document.addEventListener("keydown", (e) => {
+    if (!nav.classList.contains("is-open")) return;
+    if (e.key === "Escape") {
+      setMenu(false);
+      toggle.focus();
+    }
+    // Mantém o Tab dentro do menu aberto (links + botão de fechar)
+    if (e.key === "Tab") {
+      const items = [...nav.querySelectorAll("a"), toggle];
+      const i = items.indexOf(document.activeElement);
+      if (e.shiftKey && i <= 0) { e.preventDefault(); items[items.length - 1].focus(); }
+      else if (!e.shiftKey && i === items.length - 1) { e.preventDefault(); items[0].focus(); }
+    }
   });
+  mobile.addEventListener("change", () => setMenu(false));
 
   // Formulário -> WhatsApp
   const form = document.getElementById("contact-form");
   const note = form.querySelector(".form__note");
   form.addEventListener("submit", (ev) => {
     ev.preventDefault();
-    let ok = true;
+    let firstInvalid = null;
     form.querySelectorAll("[required]").forEach((f) => {
       const invalid = !f.value.trim();
       f.classList.toggle("is-invalid", invalid);
-      if (invalid) ok = false;
+      f.setAttribute("aria-invalid", String(invalid));
+      if (invalid && !firstInvalid) firstInvalid = f;
     });
-    if (!ok) {
+    if (firstInvalid) {
       note.textContent = "Preencha nome e telefone, por favor.";
+      firstInvalid.focus();
       return;
     }
     const d = new FormData(form);
     const text =
-      `Olá, Dima Iluminação! Meu nome é ${d.get("nome")}.\n` +
+      `Olá, Dima! Meu nome é ${d.get("nome")}.\n` +
       `Telefone: ${d.get("telefone")}\n` +
-      `Tipo de projeto: ${d.get("tipo")}\n` +
-      (d.get("mensagem") ? `Mensagem: ${d.get("mensagem")}` : "");
+      `${d.get("tipo")}.\n` +
+      (d.get("mensagem") ? `Procuro: ${d.get("mensagem")}` : "");
     window.open(waBase + "?text=" + encodeURIComponent(text), "_blank", "noopener");
     note.textContent = "Abrindo o WhatsApp…";
     form.reset();
