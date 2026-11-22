@@ -1,6 +1,6 @@
 // ===== Configuração =====
-// Substitua pelo número real da Dima (código do país + DDD + número, só dígitos).
-const WHATSAPP_NUMBER = "5500000000000";
+// WhatsApp da Dima (código do país + DDD + número, só dígitos).
+const WHATSAPP_NUMBER = "5583993706527";
 
 (function () {
   const waBase = "https://wa.me/" + WHATSAPP_NUMBER;

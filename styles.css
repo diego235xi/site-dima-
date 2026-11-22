@@ -182,6 +182,22 @@ p { margin: 0 0 1em; }
 }
 .card__icon svg { width: 26px; height: 26px; fill: none; stroke: var(--gold); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 
+/* Brands */
+.brands { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.brands li {
+  background: var(--bg);
+  min-height: 130px;
+  display: grid;
+  place-items: center;
+  font-family: var(--serif);
+  font-size: clamp(1.3rem, 2.4vw, 1.75rem);
+  color: var(--muted);
+  text-align: center;
+  padding: 1rem;
+  transition: color .3s, background .3s, text-shadow .3s;
+}
+.brands li:hover { color: var(--gold-soft); background: #13110d; text-shadow: 0 0 24px rgba(242, 184, 75, .55); }
+
 /* Rooms */
 .rooms { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
 .room { margin: 0; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: var(--surface); cursor: pointer; outline: none; }
@@ -335,6 +351,7 @@ p { margin: 0 0 1em; }
   .cards { grid-template-columns: repeat(2, 1fr); }
   .rooms { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: repeat(2, 1fr); }
+  .brands { grid-template-columns: repeat(2, 1fr); }
   .split { grid-template-columns: 1fr; gap: 2rem; }
   .hero__lamp { right: -40px; opacity: .55; }
 }
