@@ -19,7 +19,7 @@ Salve a foto como `assets/hero.jpg` (de preferência vertical, ~1200 px de altur
 ## Dados de contato
 - **WhatsApp:** constante `WHATSAPP_NUMBER` no topo de `script.js` e o número exibido em `index.html`
 - **E-mail e endereço:** seção `#contato` em `index.html`
-- **Marcas:** seção `#marcas` em `index.html`
+- **Marcas:** seção `#marcas` em `index.html`; logos em `assets/marcas/`, baixadas dos sites oficiais e exibidas em branco
 
 ## Ver localmente
 Abra `index.html` no navegador.
