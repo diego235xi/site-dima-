@@ -10,7 +10,7 @@ Site institucional estático (HTML + CSS + JS puro, sem dependências).
 
 ## Identidade visual
 - Cores: laranja `#F1502B` (principal), laranja `#F68623` (secundário), pretos `#050606`, `#151617`, `#28292B`
-- Fonte dos títulos: Cinzel (Google Fonts)
+- Fontes: Cormorant Garamond (títulos grandes), Cinzel (fonte da marca, rótulos curtos) e Inter (textos) — todas do Google Fonts
 
 ## Foto do topo
 Salve a foto como `assets/hero.jpg` (de preferência vertical, ~1200 px de altura). Sem o arquivo, o topo aparece só com texto.

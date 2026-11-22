@@ -9,7 +9,8 @@
   --gold-soft: #f68623; /* laranja Dima (secundário) */
   --radius: 16px;
   --container: 1160px;
-  --serif: "Cinzel", Georgia, serif;
+  --serif: "Cinzel", Georgia, serif;          /* fonte da marca: rótulos e títulos curtos */
+  --display: "Cormorant Garamond", Georgia, serif; /* títulos grandes */
   --sans: "Inter", system-ui, -apple-system, sans-serif;
 }
 
@@ -33,13 +34,14 @@ body {
 img, svg { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
 h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.15; margin: 0 0 .5em; }
-h1 { font-size: clamp(2.1rem, 5.4vw, 4.2rem); letter-spacing: .01em; }
-h2 { font-size: clamp(1.6rem, 3.2vw, 2.5rem); }
+h1, h2 { font-family: var(--display); font-weight: 600; line-height: 1.05; letter-spacing: -.005em; }
+h1 { font-size: clamp(2.8rem, 6.6vw, 5.4rem); }
+h2 { font-size: clamp(2.1rem, 4.2vw, 3.3rem); }
 h3 { font-size: 1.1rem; letter-spacing: .02em; }
 p { margin: 0 0 1em; }
 
 .container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 24px; }
-.accent { color: var(--gold); }
+.accent { color: var(--gold); font-style: italic; font-weight: 500; }
 .muted { color: var(--muted); }
 .eyebrow {
   text-transform: uppercase;
