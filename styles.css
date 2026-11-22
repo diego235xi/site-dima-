@@ -158,7 +158,7 @@ p { margin: 0 0 1em; }
 }
 .card__icon svg { width: 26px; height: 26px; fill: none; stroke: var(--gold); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 
-/* Brands — logos nas cores originais de cada fornecedor */
+/* Brands — fundo branco, logos nas cores originais de cada fornecedor */
 .brands { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
 .brands li {
   background: #fff;
@@ -167,8 +167,6 @@ p { margin: 0 0 1em; }
   place-items: center;
   padding: 1.5rem;
 }
-/* Logos feitas para fundo escuro (brancas/amarelas) ficam em quadro preto */
-.brands li.is-dark { background: var(--ink); }
 .brands img {
   height: var(--h, 46px);
   width: auto;

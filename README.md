@@ -20,7 +20,7 @@ Salve a foto como `assets/hero.jpg` (de preferência vertical, ~1200 px de altur
 ## Dados de contato
 - **WhatsApp:** constante `WHATSAPP_NUMBER` no topo de `script.js` e o número exibido em `index.html`
 - **E-mail e endereço:** seção `#contato` em `index.html`
-- **Marcas:** seção `#marcas` em `index.html`; logos em `assets/marcas/`, baixadas dos sites oficiais e exibidas nas cores originais (as feitas para fundo escuro ficam em quadro preto)
+- **Marcas:** seção `#marcas` em `index.html`; logos em `assets/marcas/`, baixadas dos sites oficiais e exibidas sobre fundo branco nas cores originais (Usina e Incanto Luce na versão preta)
 
 ## Ver localmente
 Abra `index.html` no navegador.
