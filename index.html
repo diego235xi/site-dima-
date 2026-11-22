@@ -16,7 +16,7 @@
   <header class="topbar" id="topo">
     <div class="container topbar__inner">
       <a href="#topo" class="logo" aria-label="Dima Iluminação — início">
-        <img src="assets/logo.svg" alt="Dima Iluminação" width="174" height="42">
+        <img src="assets/monograma-branco.svg" alt="Dima Iluminação" width="66" height="34">
       </a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
         <span></span><span></span>
@@ -36,8 +36,8 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero__glow" aria-hidden="true"></div>
-      <img class="hero__mono" src="assets/monograma.svg" alt="" aria-hidden="true">
-      <div class="container hero__inner">
+      <div class="container hero__grid">
+      <div class="hero__inner">
         <p class="eyebrow">Iluminação em João Pessoa · PB</p>
         <h1>A luz certa muda <span class="accent">tudo</span> no ambiente.</h1>
         <p class="lead">Na Dima Iluminação, unimos luminárias de qualidade e projeto técnico para criar espaços mais bonitos, confortáveis e econômicos.</p>
@@ -51,10 +51,10 @@
           <li><strong>Suporte</strong><span>da escolha à instalação</span></li>
         </ul>
       </div>
-      <div class="hero__lamp" aria-hidden="true">
-        <div class="lamp__cord"></div>
-        <div class="lamp__shade"></div>
-        <div class="lamp__beam"></div>
+      <!-- Foto do topo: salve a imagem como assets/hero.jpg (enquanto não existir, o bloco some) -->
+      <figure class="hero__media">
+        <img src="assets/hero.jpg" alt="Ambiente iluminado pela Dima Iluminação" onerror="this.closest('.hero__media').remove()">
+      </figure>
       </div>
     </section>
 
