@@ -1,29 +1,38 @@
 # Dima Iluminação — site
 
-Site institucional estático (HTML + CSS + JS puro, sem dependências).
+Site institucional estático (HTML + CSS + JS puro, sem dependências nem build), publicado pelo GitHub Pages.
 
 ## Arquivos
-- `index.html` — conteúdo das seções (Sobre, Soluções, Ambientes, Como trabalhamos, Contato)
-- `styles.css` — visual e responsividade
-- `script.js` — menu mobile, animações e envio do formulário pelo WhatsApp
+- `index.html` — página única, com as seções: abertura, Sobre (`#sobre`), Soluções (`#solucoes`), Tela tensionada (`#destaque`), Ambientes (`#ambientes`), Arquitetos e reforma (`#processo`), Marcas (`#marcas`) e Showroom/contato (`#contato`)
+- `styles.css` — linguagem visual e responsividade
+- `script.js` — links de WhatsApp com mensagem pronta, menu mobile e envio do formulário pelo WhatsApp
 - `assets/monograma-preto.svg` — logo usada no site: **sempre apenas o "dm" em preto** (extraída do manual de identidade visual)
 - `assets/favicon.svg`, `assets/logo-quadrado.png`, `assets/og-image.jpg` — ícone da aba, logo para o Google e imagem de prévia ao compartilhar
+- `assets/marcas/` — logos dos fornecedores, baixadas dos sites oficiais (Usina e Incanto Luce na versão preta)
 
-## Identidade visual
-- Tema claro: fundo `#F6F4F0`, textos e superfícies (botões, cartões, formulário) em preto `#050606`
-- Laranjas da marca: `#F1502B` (principal) e `#F68623` (secundário); `#C63D1A` para textos pequenos no fundo claro
-- Fontes: Cormorant Garamond (títulos grandes), Cinzel (fonte da marca, rótulos curtos) e Inter (textos) — todas do Google Fonts
+## Linguagem visual
+- Paleta: branco quente `#F7F5F1` (fundo), pedra `#EBE6DE` / `#D9D2C6`, grafite `#1C1D1F` (texto forte, botões e seções escuras)
+- Fundo escuro só onde valoriza a luz: a abertura e a seção de tela tensionada
+- Laranja da marca `#F1502B` apenas no contorno de foco do teclado
+- Fontes: Cormorant Garamond (títulos) e Inter (textos), do Google Fonts
+- Cantos retos (2px), sem sombras pesadas e sem animações que atrasem o conteúdo
 
-## Foto do topo
-Salve a foto como `assets/hero.jpg` (de preferência vertical, ~1200 px de altura). Sem o arquivo, o topo aparece só com texto.
+## Links de WhatsApp
+Qualquer link com `data-whatsapp="mensagem"` abre a conversa com essa mensagem pronta. Sem JavaScript, o link leva à seção de contato.
+O número fica na constante `WHATSAPP_NUMBER`, no topo de `script.js`.
+
+## Foto da abertura
+Hoje a abertura mostra um "estudo de luz" desenhado em CSS (identificado como ilustração).
+Para usar uma foto real, salve-a como `assets/hero.jpg`: ela substitui a ilustração automaticamente.
+Ideal: foto vertical ou quadrada de um ambiente com a luz acesa, com pelo menos 1600 px no lado maior, comprimida para menos de 300 KB.
 
 ## Dados de contato
-- **WhatsApp:** constante `WHATSAPP_NUMBER` no topo de `script.js` e o número exibido em `index.html`
-- **E-mail e endereço:** seção `#contato` em `index.html`
-- **Marcas:** seção `#marcas` em `index.html`; logos em `assets/marcas/`, baixadas dos sites oficiais e exibidas sobre fundo branco nas cores originais (Usina e Incanto Luce na versão preta)
+- WhatsApp (83) 99370-6527 · dimailuminacao@gmail.com · @dimailuminacao
+- Av. João Câncio da Silva, 1867 — Manaíra, João Pessoa/PB · CEP 58038-342
+- Segunda a sexta, das 9h às 18h
 
 ## Ver localmente
 Abra `index.html` no navegador.
 
-## Publicar no GitHub Pages
-Settings → Pages → Source: "Deploy from a branch" → escolha a branch e a pasta `/ (root)`.
+## Publicar
+Cada merge na branch `main` atualiza o site em https://diego235xi.github.io/site-dima-/ em um ou dois minutos.

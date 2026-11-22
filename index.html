@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dima Iluminação | Iluminação e luminárias em João Pessoa</title>
-  <meta name="description" content="Dima Iluminação em João Pessoa (PB): luminárias, projetos luminotécnicos e soluções em LED para residências, comércios e áreas externas.">
-  <meta name="theme-color" content="#f6f4f0">
+  <title>Dima Iluminação | Iluminação técnica e decorativa em João Pessoa</title>
+  <meta name="description" content="Boutique de iluminação técnica e decorativa em João Pessoa. Fitas e perfis de LED, telas tensionadas, spots, pendentes e peças decorativas, com ajuda para escolher a luz certa para cada ambiente.">
+  <meta name="theme-color" content="#f7f5f1">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://diego235xi.github.io/site-dima-/">
 
@@ -14,7 +14,7 @@
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Dima Iluminação">
   <meta property="og:title" content="Dima Iluminação | Iluminação em João Pessoa">
-  <meta property="og:description" content="Luminárias, projetos luminotécnicos e soluções em LED para residências, comércios e áreas externas. Av. João Câncio da Silva, 1867 — Manaíra.">
+  <meta property="og:description" content="Boutique de iluminação técnica e decorativa. Showroom na Av. João Câncio da Silva, 1867 — Manaíra, João Pessoa.">
   <meta property="og:url" content="https://diego235xi.github.io/site-dima-/">
   <meta property="og:image" content="https://diego235xi.github.io/site-dima-/assets/og-image.jpg">
   <meta property="og:image:width" content="1200">
@@ -27,7 +27,7 @@
     "@context": "https://schema.org",
     "@type": "Store",
     "name": "Dima Iluminação",
-    "description": "Loja de iluminação em João Pessoa: luminárias, projetos luminotécnicos e soluções em LED.",
+    "description": "Boutique de iluminação técnica e decorativa em João Pessoa: fitas e perfis de LED, telas tensionadas, spots, pendentes e peças decorativas.",
     "url": "https://diego235xi.github.io/site-dima-/",
     "logo": "https://diego235xi.github.io/site-dima-/assets/logo-quadrado.png",
     "image": "https://diego235xi.github.io/site-dima-/assets/og-image.jpg",
@@ -52,237 +52,288 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
   <header class="topbar" id="topo">
-    <div class="container topbar__inner">
+    <div class="wrap topbar__inner">
       <a href="#topo" class="logo" aria-label="Dima Iluminação — início">
-        <img src="assets/monograma-preto.svg" alt="Dima Iluminação" width="66" height="34">
+        <img src="assets/monograma-preto.svg" alt="Dima Iluminação" width="62" height="32">
       </a>
+      <nav id="menu" class="nav" aria-label="Principal">
+        <a href="#solucoes">Soluções</a>
+        <a href="#destaque">Tela tensionada</a>
+        <a href="#ambientes">Ambientes</a>
+        <a href="#processo">Para arquitetos</a>
+        <a href="#contato">Showroom</a>
+        <a class="btn btn--sm nav__cta" href="#contato" data-whatsapp="Olá, Dima! Quero conversar sobre meu projeto de iluminação.">Conversar sobre meu projeto</a>
+      </nav>
       <button class="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
         <span></span><span></span>
       </button>
-      <nav id="menu" class="nav">
-        <a href="#sobre">Sobre</a>
-        <a href="#solucoes">Soluções</a>
-        <a href="#marcas">Marcas</a>
-        <a href="#ambientes">Ambientes</a>
-        <a href="#processo">Como trabalhamos</a>
-        <a href="#contato" class="btn btn--small">Fale conosco</a>
-      </nav>
     </div>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero__grid">
-      <div class="hero__inner">
-        <p class="eyebrow">Iluminação em João Pessoa · PB</p>
-        <h1>A luz certa muda <em class="accent">tudo</em> no ambiente.</h1>
-        <p class="lead">Na Dima Iluminação, unimos luminárias de qualidade e projeto técnico para criar espaços mais bonitos, confortáveis e econômicos.</p>
-        <div class="hero__cta">
-          <a href="#contato" class="btn">Solicitar orçamento</a>
-          <a href="#solucoes" class="btn btn--ghost">Conhecer soluções</a>
+  <main id="conteudo">
+    <!-- ABERTURA -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+        <div class="hero__text">
+          <p class="label">Iluminação em João Pessoa</p>
+          <h1 id="hero-title">A luz que dá forma ao ambiente.</h1>
+          <p class="hero__lead">A Dima é uma boutique de iluminação em Manaíra. Ajudamos arquitetos e quem está construindo ou reformando a escolher a luz certa para cada espaço — do perfil de LED escondido no forro ao pendente sobre a mesa.</p>
+          <div class="hero__cta">
+            <a class="btn" href="#contato" data-whatsapp="Olá, Dima! Quero conversar sobre meu projeto de iluminação.">Conversar sobre meu projeto</a>
+            <a class="link-arrow" href="#solucoes">Ver as soluções</a>
+          </div>
         </div>
-        <ul class="hero__stats">
-          <li><strong>LED</strong><span>tecnologia eficiente</span></li>
-          <li><strong>Projeto</strong><span>luminotécnico sob medida</span></li>
-          <li><strong>Suporte</strong><span>da escolha à instalação</span></li>
-        </ul>
-      </div>
-      <!-- Foto do topo: salve a imagem como assets/hero.jpg (enquanto não existir, o bloco some) -->
-      <figure class="hero__media">
-        <img src="assets/hero.jpg" alt="Ambiente iluminado pela Dima Iluminação" onerror="this.closest('.hero__media').remove()">
-      </figure>
+
+        <!-- Abertura: quando existir uma foto real em assets/hero.jpg, ela substitui a ilustração -->
+        <figure class="hero__visual">
+          <div class="study" aria-hidden="true">
+            <span class="study__wash"></span>
+            <span class="study__profile"></span>
+            <span class="study__cord"></span>
+            <span class="study__pendant"></span>
+            <span class="study__pool"></span>
+            <span class="study__table"></span>
+            <span class="study__floor"></span>
+          </div>
+          <img class="hero__photo" src="assets/hero.jpg" alt="Ambiente iluminado com peças da Dima Iluminação" fetchpriority="high" onerror="this.remove()">
+          <figcaption>Estudo de luz: perfil linear embutido no forro e pendente sobre a mesa. <span>Ilustração.</span></figcaption>
+        </figure>
       </div>
     </section>
 
     <!-- SOBRE -->
-    <section class="section" id="sobre">
-      <div class="container split">
-        <div>
-          <p class="eyebrow">Sobre a Dima</p>
-          <h2>Iluminação pensada para quem vive o espaço.</h2>
-        </div>
-        <div class="prose">
-          <p>A Dima Iluminação nasceu para ajudar clientes, arquitetos e construtoras a encontrar a iluminação ideal para cada projeto. Mais do que vender luminárias, entendemos o ambiente, a rotina de quem o utiliza e o efeito que se quer alcançar.</p>
-          <p>Trabalhamos com produtos selecionados, atendimento próximo e orientação técnica para que o resultado final seja bonito, funcional e eficiente no consumo de energia.</p>
-        </div>
+    <section class="intro" id="sobre" aria-label="Sobre a Dima">
+      <div class="wrap intro__grid">
+        <p class="intro__statement">Antes de escolher a peça, entendemos o ambiente: o que precisa ser visto, o que deve ficar em segundo plano e qual sensação a luz deve criar.</p>
+        <dl class="intro__facts">
+          <div><dt>Showroom</dt><dd>Av. João Câncio da Silva, 1867<br>Manaíra, João Pessoa</dd></div>
+          <div><dt>Atendimento</dt><dd>Segunda a sexta,<br>das 9h às 18h</dd></div>
+        </dl>
       </div>
     </section>
 
     <!-- SOLUÇÕES -->
-    <section class="section section--alt" id="solucoes">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">Soluções</p>
-          <h2>O que fazemos</h2>
-        </div>
-        <div class="cards">
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.4 1 1.1 1 1.8V16h5v-.3c0-.7.4-1.4 1-1.8A6 6 0 0 0 12 3Z"/></svg>
+    <section class="section" id="solucoes" aria-labelledby="solucoes-title">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="label">Soluções</p>
+          <h2 id="solucoes-title">O que você encontra na Dima</h2>
+          <p class="section__sub">Toque em uma categoria para falar com a equipe sobre ela no WhatsApp.</p>
+        </header>
+
+        <div class="catalog">
+          <div class="catalog__group">
+            <div class="catalog__intro">
+              <h3>Iluminação técnica</h3>
+              <p>A luz que trabalha sem aparecer: desenha linhas, ilumina superfícies e destaca o que importa.</p>
             </div>
-            <h3>Luminárias e lâmpadas</h3>
-            <p>Pendentes, plafons, spots, perfis de LED, arandelas, fitas e lâmpadas para todos os estilos e necessidades.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg>
+            <ul class="catalog__list">
+              <li><a href="#contato" data-whatsapp="Olá, Dima! Quero saber mais sobre fitas de LED."><span class="catalog__name">Fitas de LED</span><span class="catalog__desc">Luz contínua e escondida em sancas, nichos, móveis e rodapés.</span></a></li>
+              <li><a href="#contato" data-whatsapp="Olá, Dima! Quero saber mais sobre perfis de LED."><span class="catalog__name">Perfis de LED</span><span class="catalog__desc">Linhas de luz embutidas ou sobrepostas, com difusor que esconde os pontos.</span></a></li>
+              <li><a href="#destaque"><span class="catalog__name">Telas tensionadas</span><span class="catalog__desc">Tetos e paredes que viram superfícies de luz uniforme.</span></a></li>
+              <li><a href="#contato" data-whatsapp="Olá, Dima! Quero saber mais sobre spots e embutidos."><span class="catalog__name">Spots e embutidos</span><span class="catalog__desc">Luz dirigida para quadros, bancadas, texturas e circulação.</span></a></li>
+              <li><a href="#contato" data-whatsapp="Olá, Dima! Quero saber mais sobre iluminação externa."><span class="catalog__name">Iluminação externa</span><span class="catalog__desc">Balizadores, espetos e embutidos de solo para fachadas e jardins.</span></a></li>
+            </ul>
+          </div>
+
+          <div class="catalog__group">
+            <div class="catalog__intro">
+              <h3>Iluminação decorativa</h3>
+              <p>A peça que se vê: define o centro do ambiente e continua bonita mesmo apagada.</p>
             </div>
-            <h3>Projeto luminotécnico</h3>
-            <p>Estudo de cada ambiente com definição de pontos, temperatura de cor, intensidade e cenas de iluminação.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg>
-            </div>
-            <h3>Eficiência energética</h3>
-            <p>Substituição por LED e soluções que reduzem o consumo sem perder conforto visual.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/><circle cx="12" cy="12" r="4"/></svg>
-            </div>
-            <h3>Iluminação externa</h3>
-            <p>Fachadas, jardins, piscinas e áreas de lazer com produtos resistentes ao tempo e efeitos que valorizam a arquitetura.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 4v6"/></svg>
-            </div>
-            <h3>Comercial e corporativo</h3>
-            <p>Lojas, escritórios, restaurantes e vitrines iluminados para destacar produtos e melhorar a produtividade.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M17 3a2.8 2.8 0 0 1 4 4L8 20l-5 1 1-5L17 3Z"/></svg>
-            </div>
-            <h3>Parceria com profissionais</h3>
-            <p>Apoio técnico e condições especiais para arquitetos, designers de interiores, engenheiros e eletricistas.</p>
-          </article>
+            <ul class="catalog__list">
+              <li><a href="#contato" data-whatsapp="Olá, Dima! Quero saber mais sobre pendentes."><span class="catalog__name">Pendentes</span><span class="catalog__desc">Sobre mesas, ilhas e bancadas, na altura certa para não ofuscar.</span></a></li>
+              <li><a href="#contato" data-whatsapp="Olá, Dima! Quero saber mais sobre plafons."><span class="catalog__name">Plafons</span><span class="catalog__desc">Luz geral de teto, junto ao forro, com presença discreta ou marcante.</span></a></li>
+              <li><a href="#contato" data-whatsapp="Olá, Dima! Quero saber mais sobre arandelas."><span class="catalog__name">Arandelas</span><span class="catalog__desc">Luz na parede para corredores, cabeceiras, espelhos e fachadas.</span></a></li>
+              <li><a href="#contato" data-whatsapp="Olá, Dima! Quero saber mais sobre peças decorativas."><span class="catalog__name">Peças decorativas</span><span class="catalog__desc">Luminárias que funcionam também como objeto no ambiente.</span></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- MARCAS -->
-    <section class="section" id="marcas">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">Marcas</p>
-          <h2>Trabalhamos com marcas de referência</h2>
-          <p class="muted">Produtos de fabricantes reconhecidos pelo design e pela qualidade da luz.</p>
+    <!-- DESTAQUE: TELA TENSIONADA (momento escuro, para valorizar a luz) -->
+    <section class="feature" id="destaque" aria-labelledby="destaque-title">
+      <div class="wrap">
+        <header class="feature__head">
+          <p class="label label--light">Em destaque</p>
+          <h2 id="destaque-title">Tela tensionada: o teto vira fonte de luz.</h2>
+        </header>
+
+        <div class="feature__grid">
+          <figure class="feature__room">
+            <div class="room" aria-hidden="true">
+              <span class="room__ceiling"></span>
+              <span class="room__panel"></span>
+              <span class="room__spill"></span>
+              <span class="room__wall-l"></span>
+              <span class="room__wall-r"></span>
+              <span class="room__floor"></span>
+            </div>
+            <figcaption><strong>No ambiente.</strong> A superfície inteira acende por igual, sem pontos aparentes. A sensação é de uma claraboia, mesmo à noite. <span>Ilustração.</span></figcaption>
+          </figure>
+
+          <div class="feature__side">
+            <figure class="feature__detail">
+              <svg viewBox="0 0 420 260" role="img" aria-labelledby="corte-title">
+                <title id="corte-title">Corte esquemático de uma tela tensionada: forro, fitas de LED, perfil de fixação e membrana translúcida</title>
+                <defs>
+                  <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#ffe3bf" stop-opacity=".55"/>
+                    <stop offset="1" stop-color="#ffe3bf" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <rect x="20" y="40" width="380" height="14" fill="#3a3c3f"/>
+                <g fill="#ffe3bf">
+                  <rect x="70" y="58" width="40" height="5"/><rect x="150" y="58" width="40" height="5"/><rect x="230" y="58" width="40" height="5"/><rect x="310" y="58" width="40" height="5"/>
+                </g>
+                <rect x="50" y="63" width="320" height="62" fill="url(#glow)"/>
+                <path d="M40 54v76h14M380 54v76h-14" fill="none" stroke="#8a8780" stroke-width="4"/>
+                <rect x="52" y="124" width="316" height="6" fill="#fff6ea"/>
+                <rect x="52" y="130" width="316" height="90" fill="url(#glow)" opacity=".6"/>
+                <g fill="none" stroke="#8a8780" stroke-width="1">
+                  <path d="M48 32v8"/><path d="M170 32v24"/><path d="M372 132v66"/><path d="M210 132v48"/>
+                </g>
+                <g fill="#cfc8bc" font-family="Inter, sans-serif" font-size="13">
+                  <text x="22" y="26">forro</text>
+                  <text x="176" y="26">fitas de LED</text>
+                  <text x="210" y="196" text-anchor="middle">membrana translúcida</text>
+                  <text x="398" y="216" text-anchor="end">perfil de fixação</text>
+                </g>
+              </svg>
+              <figcaption><strong>O detalhe.</strong> Fitas de LED ficam atrás de uma membrana translúcida, esticada em um perfil fixado no forro ou na parede. A distância entre os dois espalha a luz. <span>Esquema ilustrativo.</span></figcaption>
+            </figure>
+            <p class="feature__text">Funciona em salas, banheiros, closets e áreas comerciais, no teto ou em painéis de parede. É uma solução para pensar junto com o projeto, por isso vale conversar antes de fechar o forro.</p>
+            <a class="btn btn--light" href="#contato" data-whatsapp="Olá, Dima! Quero conversar sobre tela tensionada para o meu projeto.">Conversar sobre tela tensionada</a>
+          </div>
         </div>
-        <ul class="brands">
-          <li class="reveal"><img src="assets/marcas/nordecor.svg" alt="Nordecor" loading="lazy" style="--h:30px"></li>
-          <li class="reveal"><img src="assets/marcas/luminatti.webp" alt="Luminatti" loading="lazy" style="--h:44px"></li>
-          <li class="reveal"><img src="assets/marcas/ledart.png" alt="LedArt" loading="lazy" style="--h:46px"></li>
-          <li class="reveal"><img src="assets/marcas/incanto-luce.webp" alt="Incanto Luce" loading="lazy" style="--h:58px"></li>
-          <li class="reveal"><img src="assets/marcas/brilia.svg" alt="Brilia" loading="lazy" style="--h:54px"></li>
-          <li class="reveal"><img src="assets/marcas/usina-design.svg" alt="Usina Design" loading="lazy" style="--h:60px"></li>
-        </ul>
       </div>
     </section>
 
     <!-- AMBIENTES -->
-    <section class="section section--alt" id="ambientes">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">Ambientes</p>
-          <h2>Cada espaço pede uma luz diferente</h2>
-          <p class="muted">Passe o mouse (ou toque) nos ambientes para “acender” a luz.</p>
-        </div>
-        <div class="rooms">
-          <figure class="room room--sala reveal" tabindex="0">
-            <div class="room__scene"><span class="room__light"></span></div>
-            <figcaption><strong>Salas de estar</strong><span>Luz quente e indireta para aconchego.</span></figcaption>
-          </figure>
-          <figure class="room room--cozinha reveal" tabindex="0">
-            <div class="room__scene"><span class="room__light"></span></div>
-            <figcaption><strong>Cozinhas</strong><span>Luz funcional sobre bancadas e pendentes de destaque.</span></figcaption>
-          </figure>
-          <figure class="room room--loja reveal" tabindex="0">
-            <div class="room__scene"><span class="room__light"></span></div>
-            <figcaption><strong>Lojas e vitrines</strong><span>Spots direcionáveis que valorizam produtos.</span></figcaption>
-          </figure>
-          <figure class="room room--jardim reveal" tabindex="0">
-            <div class="room__scene"><span class="room__light"></span></div>
-            <figcaption><strong>Jardins e fachadas</strong><span>Balizadores e embutidos de solo para efeitos noturnos.</span></figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROCESSO -->
-    <section class="section" id="processo">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">Como trabalhamos</p>
-          <h2>Do primeiro contato à luz acesa</h2>
-        </div>
-        <ol class="steps">
-          <li class="reveal"><span class="steps__n">01</span><h3>Conversa</h3><p>Entendemos seu espaço, estilo e orçamento.</p></li>
-          <li class="reveal"><span class="steps__n">02</span><h3>Proposta</h3><p>Indicamos produtos e, se necessário, desenvolvemos o projeto luminotécnico.</p></li>
-          <li class="reveal"><span class="steps__n">03</span><h3>Entrega</h3><p>Separação e entrega dos produtos com conferência.</p></li>
-          <li class="reveal"><span class="steps__n">04</span><h3>Acompanhamento</h3><p>Suporte na instalação e no pós-venda.</p></li>
+    <section class="section" id="ambientes" aria-labelledby="ambientes-title">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="label">Luz por ambiente</p>
+          <h2 id="ambientes-title">Cada espaço pede uma luz diferente</h2>
+          <p class="section__sub">Referências gerais para começar a conversa. Cada projeto é avaliado com você.</p>
+        </header>
+        <ol class="rooms-list">
+          <li><h3>Sala de estar</h3><p>Luz indireta em sancas e arandelas, com pontos de destaque em quadros e texturas.</p><span class="tag">Tons quentes · 2700–3000K</span></li>
+          <li><h3>Cozinha</h3><p>Luz funcional sobre a bancada, fita sob os armários e pendentes marcando a ilha ou a mesa.</p><span class="tag">3000–4000K</span></li>
+          <li><h3>Banheiro</h3><p>Luz frontal no espelho, para não criar sombras no rosto, e luz geral suave.</p><span class="tag">3000–4000K</span></li>
+          <li><h3>Quarto</h3><p>Luz baixa e quente, com leitura na cabeceira e comando ao alcance da cama.</p><span class="tag">Tons quentes · 2700K</span></li>
+          <li><h3>Fachada e jardim</h3><p>Balizadores e espetos que desenham o caminho e valorizam a vegetação à noite.</p><span class="tag">Para áreas externas</span></li>
         </ol>
       </div>
     </section>
 
-    <!-- CONTATO -->
-    <section class="section section--alt contact" id="contato">
-      <div class="container split">
-        <div>
-          <p class="eyebrow">Contato</p>
-          <h2>Vamos iluminar o seu projeto?</h2>
-          <p class="muted">Envie sua mensagem e retornamos o mais rápido possível. Se preferir, fale direto pelo WhatsApp.</p>
-          <ul class="contact__list">
-            <li><span>WhatsApp</span><a href="https://wa.me/5583993706527" data-whatsapp target="_blank" rel="noopener">(83) 99370-6527</a></li>
-            <li><span>E-mail</span><a href="mailto:dimailuminacao@gmail.com">dimailuminacao@gmail.com</a></li>
-            <li><span>Endereço</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Jo%C3%A3o+C%C3%A2ncio+da+Silva%2C+1867+-+Manaira%2C+Jo%C3%A3o+Pessoa+-+PB%2C+58038-342" target="_blank" rel="noopener">Av. João Câncio da Silva, 1867 — Manaíra, João Pessoa/PB · CEP 58038-342</a></li>
-            <li><span>Horário</span><span>Segunda a sexta, das 9h às 18h</span></li>
-            <li><span>Instagram</span><a href="https://www.instagram.com/dimailuminacao/" target="_blank" rel="noopener">@dimailuminacao</a></li>
-          </ul>
+    <!-- CAMINHOS / COMO FUNCIONA -->
+    <section class="paths" id="processo" aria-labelledby="processo-title">
+      <div class="wrap">
+        <h2 id="processo-title" class="visually-hidden">Como podemos ajudar</h2>
+        <div class="paths__grid">
+          <article class="path">
+            <p class="label">Arquitetos e designers de interiores</p>
+            <h3>Leve o projeto, a gente pensa a luz junto.</h3>
+            <p>Envie a planta ou o projeto de interiores. Indicamos peças e soluções técnicas para cada ponto, e você vê as opções no showroom com o seu cliente.</p>
+            <a class="btn" href="#contato" data-whatsapp="Olá, Dima! Sou arquiteto(a)/designer e quero conversar sobre um projeto.">Conversar sobre um projeto</a>
+          </article>
+          <article class="path path--stone">
+            <p class="label">Construindo ou reformando</p>
+            <h3>Não sabe por onde começar? Comece pelo ambiente.</h3>
+            <p>Mande fotos ou medidas do espaço. A equipe ajuda a escolher as peças, a temperatura de cor e a quantidade de luz.</p>
+            <a class="btn btn--line" href="#contato" data-whatsapp="Olá, Dima! Estou construindo/reformando e quero ajuda para escolher a iluminação.">Falar com o showroom</a>
+          </article>
         </div>
+        <ol class="steps" aria-label="Como funciona">
+          <li><span>1</span><p><strong>Conte sobre o ambiente.</strong> Planta, fotos ou medidas pelo WhatsApp.</p></li>
+          <li><span>2</span><p><strong>Receba as indicações.</strong> Peças, efeitos e temperatura de cor para cada espaço.</p></li>
+          <li><span>3</span><p><strong>Veja as peças de perto.</strong> No showroom, em Manaíra.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- MARCAS -->
+    <section class="brands-section" id="marcas" aria-labelledby="marcas-title">
+      <div class="wrap">
+        <h2 id="marcas-title" class="label">Marcas que trabalhamos</h2>
+        <ul class="brands">
+          <li><img src="assets/marcas/nordecor.svg" alt="Nordecor" loading="lazy" width="170" height="31" style="--h:24px"></li>
+          <li><img src="assets/marcas/luminatti.webp" alt="Luminatti" loading="lazy" width="314" height="69" style="--h:34px"></li>
+          <li><img src="assets/marcas/ledart.png" alt="LedArt" loading="lazy" width="491" height="138" style="--h:38px"></li>
+          <li><img src="assets/marcas/incanto-luce.webp" alt="Incanto Luce" loading="lazy" width="900" height="346" style="--h:46px"></li>
+          <li><img src="assets/marcas/brilia.svg" alt="Brilia" loading="lazy" width="190" height="87" style="--h:42px"></li>
+          <li><img src="assets/marcas/usina-design.svg" alt="Usina Design" loading="lazy" width="1349" height="639" style="--h:46px"></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SHOWROOM E CONTATO -->
+    <section class="section contact" id="contato" aria-labelledby="contato-title">
+      <div class="wrap contact__grid">
+        <div class="contact__info">
+          <p class="label">Showroom</p>
+          <h2 id="contato-title">Venha ver a luz de perto.</h2>
+          <p class="section__sub">Atendemos no showroom em Manaíra e pelo WhatsApp. Se puder, traga a planta ou fotos do ambiente.</p>
+          <dl class="contact__list">
+            <div><dt>Endereço</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Jo%C3%A3o+C%C3%A2ncio+da+Silva%2C+1867+-+Mana%C3%ADra%2C+Jo%C3%A3o+Pessoa+-+PB%2C+58038-342" target="_blank" rel="noopener">Av. João Câncio da Silva, 1867<br>Manaíra, João Pessoa/PB · CEP 58038-342</a></dd></div>
+            <div><dt>Horário</dt><dd>Segunda a sexta, das 9h às 18h</dd></div>
+            <div><dt>WhatsApp</dt><dd><a href="https://wa.me/5583993706527" data-whatsapp target="_blank" rel="noopener">(83) 99370-6527</a></dd></div>
+            <div><dt>E-mail</dt><dd><a href="mailto:dimailuminacao@gmail.com">dimailuminacao@gmail.com</a></dd></div>
+            <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/dimailuminacao/" target="_blank" rel="noopener">@dimailuminacao</a></dd></div>
+          </dl>
+        </div>
+
         <form class="form" id="contact-form" novalidate>
+          <h3 class="form__title">Conte sobre o seu projeto</h3>
+          <p class="form__hint">A mensagem abre no WhatsApp da Dima, pronta para enviar.</p>
           <label>Nome
             <input name="nome" type="text" autocomplete="name" required>
           </label>
           <label>Telefone / WhatsApp
-            <input name="telefone" type="tel" autocomplete="tel" required>
+            <input name="telefone" type="tel" autocomplete="tel" inputmode="tel" required>
           </label>
-          <label>Tipo de projeto
+          <label>Você é
             <select name="tipo">
-              <option>Residencial</option>
-              <option>Comercial</option>
-              <option>Área externa</option>
-              <option>Sou profissional (arquiteto, eletricista…)</option>
+              <option>Estou construindo ou reformando</option>
+              <option>Arquiteto(a) ou designer de interiores</option>
+              <option>Projeto comercial</option>
               <option>Outro</option>
             </select>
           </label>
-          <label>Mensagem
-            <textarea name="mensagem" rows="4" placeholder="Conte um pouco sobre o seu projeto"></textarea>
+          <label>Ambiente ou peça que procura
+            <textarea name="mensagem" rows="4" placeholder="Ex.: perfil de LED para a sala, pendentes para a ilha da cozinha…"></textarea>
           </label>
           <button type="submit" class="btn">Enviar pelo WhatsApp</button>
           <p class="form__note" role="status" aria-live="polite"></p>
         </form>
       </div>
-      <div class="container">
+      <div class="wrap">
         <div class="map">
-          <iframe title="Localização da Dima Iluminação no mapa" src="https://www.google.com/maps?q=Av.+Jo%C3%A3o+C%C3%A2ncio+da+Silva,+1867+-+Mana%C3%ADra,+Jo%C3%A3o+Pessoa+-+PB,+58038-342&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          <iframe title="Localização do showroom da Dima Iluminação no mapa" src="https://www.google.com/maps?q=Av.+Jo%C3%A3o+C%C3%A2ncio+da+Silva,+1867+-+Mana%C3%ADra,+Jo%C3%A3o+Pessoa+-+PB,+58038-342&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer__grid">
+    <div class="wrap footer__grid">
       <div class="footer__brand">
-        <img class="footer__logo" src="assets/monograma-preto.svg" alt="Dima Iluminação" width="78" height="40">
-        <p>Luminárias, projetos luminotécnicos e soluções em LED em João Pessoa.</p>
+        <img class="footer__logo" src="assets/monograma-preto.svg" alt="Dima Iluminação" width="70" height="36" loading="lazy">
+        <p>Boutique de iluminação técnica e decorativa em João Pessoa.</p>
+      </div>
+      <div>
+        <h4>Showroom</h4>
+        <p>Av. João Câncio da Silva, 1867<br>Manaíra, João Pessoa/PB<br>CEP 58038-342</p>
+        <p>Segunda a sexta, das 9h às 18h</p>
       </div>
       <div>
         <h4>Contato</h4>
@@ -293,31 +344,23 @@
         </ul>
       </div>
       <div>
-        <h4>Loja</h4>
-        <ul>
-          <li>Av. João Câncio da Silva, 1867<br>Manaíra, João Pessoa/PB<br>CEP 58038-342</li>
-          <li>Segunda a sexta, das 9h às 18h</li>
-        </ul>
-      </div>
-      <div>
         <h4>Navegação</h4>
         <ul>
-          <li><a href="#sobre">Sobre</a></li>
           <li><a href="#solucoes">Soluções</a></li>
+          <li><a href="#destaque">Tela tensionada</a></li>
+          <li><a href="#ambientes">Ambientes</a></li>
+          <li><a href="#processo">Para arquitetos</a></li>
           <li><a href="#marcas">Marcas</a></li>
-          <li><a href="#contato">Contato</a></li>
         </ul>
       </div>
     </div>
-    <div class="container">
-      <div class="footer__bottom">
-        <span>© <span id="ano"></span> Dima Iluminação. Todos os direitos reservados.</span>
-        <a href="#topo">Voltar ao topo ↑</a>
-      </div>
+    <div class="wrap footer__bottom">
+      <span>© <span id="ano"></span> Dima Iluminação</span>
+      <a href="#topo">Voltar ao topo ↑</a>
     </div>
   </footer>
 
-  <a class="wa-float" href="https://wa.me/5583993706527" data-whatsapp target="_blank" rel="noopener" aria-label="Fale pelo WhatsApp">
+  <a class="wa-float" href="https://wa.me/5583993706527" data-whatsapp target="_blank" rel="noopener" aria-label="Fale com a Dima pelo WhatsApp">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.3Z" fill="currentColor"/></svg>
   </a>
 
