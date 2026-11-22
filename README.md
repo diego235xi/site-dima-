@@ -6,7 +6,8 @@ Site institucional estático (HTML + CSS + JS puro, sem dependências).
 - `index.html` — conteúdo das seções (Sobre, Soluções, Ambientes, Como trabalhamos, Contato)
 - `styles.css` — visual e responsividade
 - `script.js` — menu mobile, animações e envio do formulário pelo WhatsApp
-- `assets/logo.svg`, `assets/monograma.svg`, `assets/favicon.svg` — marca extraída do manual de identidade visual
+- `assets/monograma-branco.svg` — logo usada no site: **sempre apenas o "dm" em branco** (extraída do manual de identidade visual)
+- `assets/favicon.svg`, `assets/logo-quadrado.png`, `assets/og-image.jpg` — ícone da aba, logo para o Google e imagem de prévia ao compartilhar
 
 ## Identidade visual
 - Cores: laranja `#F1502B` (principal), laranja `#F68623` (secundário), pretos `#050606`, `#151617`, `#28292B`
